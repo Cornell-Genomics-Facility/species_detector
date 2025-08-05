@@ -1,0 +1,46 @@
+
+custom_logo: "/lustre2/home/illumina/scripts/munnQC/biotech_logo.png"
+# custom_logo: "/local/workdir/prm88/scripts/biotech_logo.png"
+
+read_count_multiplier: 1
+thousandsSep_format: ","
+
+show_analysis_paths: False
+show_analysis_time: False
+
+exclude_modules:
+  - general-stats
+  - snippy
+  - fastp
+
+sample_names_replace_regex: True
+sample_names_replace:
+  "(^.*)(_R1)": "\\1"
+  "(^.*)(_R1_001)": "\\1"
+
+report_section_order:
+  species_stacked_barplot:
+      order: -200
+
+  blastname_stacked_barplot:
+      order: -300
+
+  species:
+      order: -400
+
+custom_data:
+  # Add description under heading
+  species_stacked_barplot:
+    section_name: "Species distribution by sample"
+    description: "Summary of species distribution for all samples"
+
+  # Add description under heading
+  blastname_stacked_barplot:
+    section_name: "Blastname distribution by sample"
+    description: "Summary of Blastname distribution for all samples"
+
+  # Add description under heading
+  species:
+    section_name: "Species distribution by sample (text version)"
+    description: "Summary of species distribution for all samples (text version)"
+
