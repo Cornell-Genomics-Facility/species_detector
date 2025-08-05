@@ -79,7 +79,7 @@ bash fastq_species_detector_multiqc.sh \
 
 ## Example output 
 
-<img src="species_distribution.png" alt="Species distribution by sample" width="400" />
+<img src="species_distribution.png" alt="Species distribution by sample" width="800" />
 
 ---
 
