@@ -1,3 +1,5 @@
+![SpeciesDetector](./header_image.png)
+
 # Species Detector
 
 ---
